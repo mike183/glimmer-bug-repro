@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MountTest</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{content-for "head"}}
+
+    <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
+    <link rel="stylesheet" href="{{rootURL}}assets/mount-test.css">
+
+    <meta name="test-standalone-engine/config/environment" content="%7B%22modulePrefix%22%3A%22test-standalone-engine%22%2C%22environment%22%3A%22development%22%7D" />
+
+    <meta name="mount-test/config/asset-manifest" content="%22%7B%22bundles%22%3A%7B%22test-lazy-engine%22%3A%7B%22assets%22%3A%5B%7B%22uri%22%3A%22/engines-dist/test-lazy-engine/assets/engine-vendor.css%22%2C%22type%22%3A%22css%22%7D%2C%7B%22uri%22%3A%22/engines-dist/test-lazy-engine/assets/engine-vendor.js%22%2C%22type%22%3A%22js%22%7D%2C%7B%22uri%22%3A%22/engines-dist/test-lazy-engine/assets/engine.js%22%2C%22type%22%3A%22js%22%7D%5D%7D%2C%22test-standalone-engine%22%3A%7B%22assets%22%3A%5B%7B%22uri%22%3A%22/test-standalone-engine/engines-dist/test-lazy-engine/assets/engine-vendor.css%22%2C%22type%22%3A%22css%22%7D%2C%7B%22uri%22%3A%22/test-standalone-engine/engines-dist/test-lazy-engine/assets/engine-vendor.js%22%2C%22type%22%3A%22js%22%7D%2C%7B%22uri%22%3A%22/test-standalone-engine/engines-dist/test-lazy-engine/assets/engine.js%22%2C%22type%22%3A%22js%22%7D%5D%7D%7D%7D%22" />
+
+    {{content-for "head-footer"}}
+  </head>
+  <body>
+    {{content-for "body"}}
+
+    <script src="{{rootURL}}assets/vendor.js"></script>
+    <script src="{{rootURL}}assets/mount-test.js"></script>
+
+    {{content-for "body-footer"}}
+  </body>
+</html>
